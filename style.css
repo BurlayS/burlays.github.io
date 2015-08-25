@@ -1,0 +1,162 @@
+
+@font-face {
+	font-family: Majestic;
+    src: url('Majestic.ttf');
+}
+@font-face {
+font-family: 'Menuet script';
+src: url('Menuet script.ttf');
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: #BC8F8F; 
+	width: 100%;
+	height: auto;	
+	}
+body{
+	border-radius: 10px;
+	background-color: #BC8F8F; 
+	width: 98%;
+	margin-left: 1%;
+	height: 900px;
+	}
+.row, .container, ul.nav{
+	height: 100%;
+}
+.container{
+	background-color: #FFFFFF;
+	padding-left: 0;
+	padding-right: 0; 	
+	}
+#header{
+	background-color: #BC8F8F;
+	display: table;
+	color: #FFFEAA;
+	font-size: 250%;
+	font-style: italic;
+	text-align: center;
+	height:20%;
+	border-radius: 0px 0px 10px 10px;
+	}
+#p1{
+	display: table-cell;
+	vertical-align: middle;
+	}	
+hr{
+	height: 2px;
+	border: none;
+	background-color: #BC8F8F;
+	}
+#navbarHorizont, #header, #divCenter, hr, footer, ul.nav{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+#navbarHorizont, ul.nav{
+	display: table;
+}
+#navbarHorizont{
+	height: 4%;
+}
+ul.nav {
+	vertical-align: middle;
+	width: 100%;
+}
+ul.nav li {
+	width: 25%;
+	margin-left: 2.5%;
+	margin-right:2.5%;
+	height: 100%;
+  	background-color: #FFFEAA;
+  	border: 1px solid #8B658B;
+  	float:left;                                   /*делаем меню горизонтальным*/
+  	list-style: none; 
+  	text-align: center;
+}
+ul.nav:first-child{
+	margin-left: 5%;
+}
+#li_1{
+	border-radius: 80px 0px 0px 80px;
+}
+#li_3{
+	border-radius: 0px 80px 80px 0px;
+}
+ul.nav li a {
+	line-height: 240%;
+	color: #8B658B;
+	font-size: 150%;
+	text-decoration: none;
+	font-weight: 900;
+	font-style: italic;
+  	font-family: verdana;
+	text-align: center;
+}
+ul.nav li:hover {
+ 	box-shadow: inset 10px 10px 10px rgba(0,0,0,0.5);
+ 	-webkit-transform: scale(0.9,0.9);
+  	-moz-transform: scale(0.9,0.9);
+  	-o-transform: scale(0.9,0.9);
+  	-ms-transform: scale(0.9,0.9);
+}
+    /*Выпадающее меню*/
+
+ul.nav li:hover  ul {
+	z-index: 5;
+	border-top: 1px solid white;
+	display: block;
+	width: 30%;
+	position: absolute;
+	left: 0;
+}
+ul.nav li ul li {
+	width: 100%;
+	background-color: #FFFEAA;
+} 
+#divCenter{
+	margin-top: 3%;
+	font-size: 175%;
+	height: 40%;
+	padding: 3% 6.5% 10% 6.5%;
+	border top: 5px solid #FF1E4B;
+	color: #8B658B; 
+}
+footer {
+	position: relative;
+	display: table;
+	width: 93%;
+	font-size: 130%;
+	text-align: right;
+	height: 22%;
+}
+footer p{
+	display: table-cell;
+	vertical-align: bottom;
+}
+#toMain a:hover {
+ 	box-shadow: inset 10px 10px 10px rgba(0,0,0,0.5);
+}
+/* Изменения стилей для планшетов и смартфонов */
+
+@media screen and (max-width: 991px) {
+
+ul.nav li:hover  ul{
+	display: none;
+}
+/* Изменения стилей для свмых маленьких размеров */
+
+@media screen and (max-width: 780px) {
+
+ul.nav li a{
+	font-size: 1.8vw;
+}
+#header{
+	height: 25vh;
+}
+} 
+
+
+
