@@ -1,0 +1,72 @@
+
+#window-popup {
+width:100%; 
+min-height:100%; 
+background-color: rgba(0,0,0,0.5); 
+overflow:hidden; 
+position:fixed; 
+top:0px; 
+left: 0px;
+} 
+#window-content {
+margin:40px auto 0px auto; 
+width:500px; 
+height:400px; 
+padding:10px;
+background-color: #CAFF70; 
+border-radius:5px;
+box-shadow: 0px 0px 10px #000;
+}
+body{
+background: #FFEC8B;
+}
+#par1{
+font-size: xx-large;
+font-style: oblique;
+font-weight: 400;
+}
+hr{
+height: 1px;
+border: none;
+background-color: black;
+}
+#myTable{
+border-collapse: collapse;
+border: 2px solid #000;
+padding: 4px;
+cellspacing: 5px;
+}
+th{
+border: 2px solid #000;	
+border-collapse: collapse;
+background-color:#FFDAB9;
+padding: 4px;
+font-size: x-large;	
+font-weight: 900;
+text-align: center;
+background:#CAFF70;
+}
+.tdClicked, .tdNotClicked{
+border-collapse: collapse;
+border: 2px solid #000;
+padding: 4px;
+text-align: center;
+font-size: x-large;
+background: #FFEC8B;
+}
+#close{
+text-align: right;
+}
+#name{
+position: relative;
+text-align: center;
+font-weight: 900;
+}
+.text{
+position: relative;
+text-align: center;
+} 
+#pic{
+width: 152px;
+height: 191px;
+}
