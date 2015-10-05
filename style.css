@@ -21,7 +21,7 @@ body{
 	background-color: #BC8F8F; 
 	width: 98%;
 	margin-left: 1%;
-	height: 900px;
+	height: 1100px;
 	}
 .row, .container, ul.nav{
 	height: 100%;
@@ -44,7 +44,11 @@ body{
 #p1{
 	display: table-cell;
 	vertical-align: middle;
-	}	
+	}
+table, th, td {
+	border-collapse: collapse;
+	border: double #000;
+}	
 hr{
 	height: 2px;
 	border: none;
