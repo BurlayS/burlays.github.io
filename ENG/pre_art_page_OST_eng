@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>developer</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap.css">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+     
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
+    </script> 
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'row' class = 'col-sm-12 col-md-12 col-lg-12'>
+            <div id = 'header'>
+                    <p id = 'p1'>Сторінка-портфоліо фронт-енд розробника<br>Бурлая Сергія</p>
+            </div>
+            <hr> 
+            <div id = "navbarHorizont">
+                <ul class="nav">
+                    <li id='li_1'><a href='my_projects_eng.html'>Back</a>
+                    </li>
+                    <li id='li_2'><a href='http://www.dimost.com.ua'>Visit</a>
+                    </li>
+                    <li id='li_3'><a href=''>Code of scripts</a>
+                        </li>
+                </ul>
+            </div> 
+            <hr>
+               <div id='divCenter'>
+                    <div>
+                        <p><u>Art website of sculptor Dmitriy Ostapenko</u></p><br>
+                        <p>I have a friend Dmitry Ostapenko. He is a talanted sculptor. Once he asked me to  create a website for him where his works could be shown. I agreed to make it, because it was necessary for me to study html, css and bootstrap of course. Now you can visit this website, see how does it work and enjoy with perfect works of Dmitry Ostapenko. The website has adaptive design, it incluses several scripts written with JQuery. It is based on bootstrap grid. The language  is russian.
+                        </p>
+                    </div>
+               </div>
+               <footer><p>burlayS@gmail.com</p>
+               </footer>
+        </div>
+    </div>
+</body>
+
+</html>
