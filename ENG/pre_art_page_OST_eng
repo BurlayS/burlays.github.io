@@ -30,8 +30,14 @@
             <hr>
                <div id='divCenter'>
                     <div>
-                        <p><u>Art website of sculptor Dmitriy Ostapenko</u></p><br>
-                        <p>I have a friend Dmitry Ostapenko. He is a talanted sculptor. Once he asked me to  create a website for him where his works could be shown. I agreed to make it, because it was necessary for me to study html, css and bootstrap of course. Now you can visit this website, see how does it work and enjoy with perfect works of Dmitry Ostapenko. The website has adaptive design, it incluses several scripts written with JQuery. It is based on bootstrap grid. The language  is russian.
+                        <p><u>Art website of sculptor Dmitro Ostapenko</u></p><br>
+                        <p>I have a friend Dmitry Ostapenko. He is a talanted sculptor. 
+                        Once he asked me to  create a website for him where his works could be shown. 
+                        I agreed to make it, because it was necessary for me to study HTML, 
+                        CSS and bootstrap of course. Now you can visit this website, 
+                        see how does it work and enjoy with perfect works of Dmitro Ostapenko. 
+                        The website has adaptive design, it incluses several scripts written with JQuery. 
+                        It is based on bootstrap grid. The language  is russian.
                         </p>
                     </div>
                </div>
