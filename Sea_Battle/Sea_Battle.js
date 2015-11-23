@@ -385,31 +385,31 @@
             clear_and_drawProgress.call(button2);
             button2.setText('Назад', 1035, 419, 22, 'pink');
         } else if (phase == 3) {
-            setTextParagraph('Разместите трехпалубный');
+            setTextParagraph('Set 3-cell');
         } else if (phase == 4) {
-            setTextParagraph('Разместите трехпалубный');
+            setTextParagraph('Set 3-cell');
         } else if (phase == 5) {
-            setTextParagraph('Разместите двухпалубный');
+            setTextParagraph('Set 2-cell');
         } else if (phase == 6) {
-            setTextParagraph('Разместите двухпалубный');
+            setTextParagraph('Set 2-cell');
         } else if (phase == 7) {
-            setTextParagraph('Разместите двухпалубный');
+            setTextParagraph('Set 2-cell');
         } else if (phase == 8) {
-            setTextParagraph('Разместите одинарный');
+            setTextParagraph('Set 1-cell');
         } else if (phase == 9) {
-            setTextParagraph('Разместите одинарный');
+            setTextParagraph('Set 1-cell');
         } else if (phase == 10) {
-            setTextParagraph('Разместите одинарный');
+            setTextParagraph('Set 1-cell');
         } else if (phase == 11) {
-            setTextParagraph('Разместите одинарный');
+            setTextParagraph('Set 1-cell');
         } else if (phase == 12) {
             clear_and_drawProgress.call(button2);
-            button2.setText('Обновить карту', 990, 419, 22, 'lime');
+            button2.setText('change map', 990, 419, 22, 'lime');
             map_Generator(arr_Enemy_Map, box1);
             clear_and_drawProgress.call(infoBox);
-            infoBox.setText('Готово!', 1005, 150, 35, 'orange');
-            infoBox.setText('Нажмите "Развалить врага"', 940, 190, 20, 'orange');
-            infoBox.setText('Нажмите "или ENTER.', 965, 210, 20, 'orange');
+            infoBox.setText('Ready!', 1005, 150, 35, 'orange');
+            infoBox.setText('Press "Fight"', 940, 190, 20, 'orange');
+            infoBox.setText('or press ENTER', 965, 210, 20, 'orange');
             clear_and_drawProgress.call(button);
             button.setText('Развалить врага!', 953, 342, 30, 'yellow');
 
@@ -437,7 +437,7 @@
             button.setText('Играть заново', 985, 342, 25, 'green');
         } else if (phase == 14) {
             clear_and_drawProgress.call(button);
-            button.setText('Играть заново', 972, 342, 30, 'yellow');
+            button.setText('Play again!', 972, 342, 30, 'yellow');
             //-----------------дорисовка кораблей, в которые не попали----------
             (function drawLast() {
                 for (var i = 0; i < arr_Self_Map.length; i++) {
