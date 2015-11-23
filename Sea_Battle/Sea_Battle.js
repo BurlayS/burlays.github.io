@@ -345,7 +345,7 @@
     function setTextParagraph(text) {
         clear_and_drawProgress.call(infoBox);
         infoBox.setText(text, 930, 70, 20, 'orange');
-        infoBox.setText('   apropriate cells on your field.', 930, 90, 20, 'orange');
+        infoBox.setText('   apropriate cells on your field.', 935, 90, 20, 'orange');
         //infoBox.setText('нужные клетки', 930, 110, 20, 'orange');
         clear_and_drawProgress.call(button);
         button.setText('Confirm', 1025, 342, 25, 'pink');
@@ -423,7 +423,7 @@
 
         } else if (phase == 13) {
             clear_and_drawProgress.call(button2);
-            button2.setText('Set label', 1025, 419, 22, 'pink');
+            button2.setText('Set label', 1030, 419, 22, 'pink');
             clear_and_drawProgress.call(infoBox);
             infoBox.setText('FIGHT!', 1008, 100, 35, 'yellow');
             infoBox.setText("Shoot the enemy's ships", 960, 140, 20, 'orange');
@@ -503,26 +503,26 @@
         clear_and_drawProgress(self_counter_box.x + 2, self_counter_box.y + 2, selfProgressLine, self_counter_box.h - 2, 'purple');
         clear_and_drawProgress(enemy_counter_box.x + 2, enemy_counter_box.y + 2, enemyProgressLine, enemy_counter_box.h - 2, 'purple');
         //--------восстановление надписей
-        self_counter_box.setText('Русь:    ' + selfProgress + ' %', 565, 420, 30, 'lime');
-        enemy_counter_box.setText('Враги:    ' + enemyProgress + ' %', 105, 420, 30, 'red');
+        self_counter_box.setText('You:    ' + selfProgress + ' %', 572, 420, 30, 'lime');
+        enemy_counter_box.setText('Enemy:    ' + enemyProgress + ' %', 105, 420, 30, 'red');
 
         if (enemyProgress == 100 && phase !== 1) {
             phase = 14;
             phaseOperation();
             clear_and_drawProgress(enemy_counter_box.x + 2, enemy_counter_box.y + 2, enemyProgressLine, enemy_counter_box.h - 2, 'pink');
-            enemy_counter_box.setText('Враги:    ' + enemyProgress + ' %', 105, 420, 30, 'red');
+            enemy_counter_box.setText('Enemy:    ' + enemyProgress + ' %', 105, 420, 30, 'red');
             clear_and_drawProgress.call(infoBox);
-            infoBox.setText('Тризда вам,', 980, 155, 35, 'orange');
-            infoBox.setText('ребята!', 1020, 200, 35, 'orange');
+            infoBox.setText('You lose.', 1000, 155, 35, 'orange');
+            //infoBox.setText('ребята!', 1020, 200, 35, 'orange');
         }
         if (selfProgress == 100 && phase !== 1) {
             phase = 14;
             phaseOperation();
             clear_and_drawProgress(self_counter_box.x + 2, self_counter_box.y + 2, selfProgressLine, self_counter_box.h - 2, 'pink');
-            self_counter_box.setText('Русь:    ' + selfProgress + ' %', 565, 420, 30, 'green');
+            self_counter_box.setText('You:    ' + selfProgress + ' %', 565, 420, 30, 'green');
             clear_and_drawProgress.call(infoBox);
-            infoBox.setText('Ты просто', 985, 155, 35, 'orange');
-            infoBox.setText('лучший!', 1000, 200, 35, 'orange');
+            infoBox.setText('You are ', 1000, 155, 35, 'orange');
+            infoBox.setText('the best!', 1000, 200, 35, 'orange');
         }
 
     };
