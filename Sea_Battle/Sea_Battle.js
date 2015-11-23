@@ -114,11 +114,11 @@
 
     var self_counter_box = new InfoBox(475, 387, 330, 50);
     self_counter_box.drawInfoBox('white', 'stroke');
-    self_counter_box.setText('Русь:    ' + 0 + ' %', 565, 420, 30, 'lime');
+    self_counter_box.setText('You:    ' + 0 + ' %', 572, 420, 30, 'lime');
 
     var enemy_counter_box = new InfoBox(30, 387, 330, 50);
     enemy_counter_box.drawInfoBox('white', 'stroke');
-    enemy_counter_box.setText('Враги:    ' + 0 + ' %', 105, 420, 30, 'red');
+    enemy_counter_box.setText('Enemy:    ' + 0 + ' %', 105, 420, 30, 'red');
     phaseOperation();
 
     //-----------------------------Отрисовка полей, циферок и буковок-----------------------------
@@ -345,17 +345,17 @@
     function setTextParagraph(text) {
         clear_and_drawProgress.call(infoBox);
         infoBox.setText(text, 930, 70, 20, 'orange');
-        infoBox.setText('корабль, выбирая мышкой', 930, 90, 20, 'orange');
-        infoBox.setText('нужные клетки', 930, 110, 20, 'orange');
+        infoBox.setText('   apropriate cells on your field.', 930, 90, 20, 'orange');
+        //infoBox.setText('нужные клетки', 930, 110, 20, 'orange');
         clear_and_drawProgress.call(button);
-        button.setText('Подтвердить', 1000, 342, 25, 'pink');
+        button.setText('Confirm', 1025, 342, 25, 'pink');
 
     }
 
     function phaseOperation() {
         if (phase == 0) {
-            infoBox.setText('Морской бой', 950, 170, 40, 'pink');
-            button.setText('Играть!', 1020, 342, 25, 'lime');
+            infoBox.setText('The sea battle', 950, 170, 40, 'pink');
+            button.setText('Play!', 1038, 342, 25, 'lime');
         }
 
         if (phase == 1) {
@@ -373,45 +373,45 @@
                 progress();
             };
             clear_and_drawProgress.call(infoBox);
-            infoBox.setText('Расставьте корабли', 955, 150, 25, 'orange');
-            infoBox.setText('или нажмите ENTER.', 955, 180, 25, 'orange');
+            infoBox.setText('Set your ships', 990, 150, 25, 'orange');
+            infoBox.setText('or press ENTER.', 980, 180, 25, 'orange');
             clear_and_drawProgress.call(button);
-            button.setText('Расставить вручную', 965, 342, 22, 'lime');
+            button.setText('Set ships manually', 980, 342, 22, 'lime');
             button2.drawInfoBox('white', 'stroke');
             clear_and_drawProgress.call(button2);
-            button2.setText('Расставить автоматически', 935, 419, 22, 'lime');
+            button2.setText('Set ships automatically', 960, 419, 22, 'lime');
         } else if (phase == 2) {
-            setTextParagraph('Разместите четырехпалубный');
+            setTextParagraph('   Set 4-cell ship by clicking on');
             clear_and_drawProgress.call(button2);
-            button2.setText('Назад', 1035, 419, 22, 'pink');
+            button2.setText('Back', 1045, 419, 22, 'pink');
         } else if (phase == 3) {
-            setTextParagraph('Set 3-cell');
+            setTextParagraph('   Set 3-cell ship by clicking');
         } else if (phase == 4) {
-            setTextParagraph('Set 3-cell');
+            setTextParagraph('   Set 3-cell ship by clicking');
         } else if (phase == 5) {
-            setTextParagraph('Set 2-cell');
+            setTextParagraph('   Set 2-cell ship by clicking');
         } else if (phase == 6) {
-            setTextParagraph('Set 2-cell');
+            setTextParagraph('   Set 2-cell ship by clicking');
         } else if (phase == 7) {
-            setTextParagraph('Set 2-cell');
+            setTextParagraph('   Set 2-cell ship by clicking');
         } else if (phase == 8) {
-            setTextParagraph('Set 1-cell');
+            setTextParagraph('   Set 1-cell ship by clicking');
         } else if (phase == 9) {
-            setTextParagraph('Set 1-cell');
+            setTextParagraph('   Set 1-cell ship by clicking');
         } else if (phase == 10) {
-            setTextParagraph('Set 1-cell');
+            setTextParagraph('   Set 1-cell ship by clicking');
         } else if (phase == 11) {
-            setTextParagraph('Set 1-cell');
+            setTextParagraph('   Set 1-cell ship by clicking');
         } else if (phase == 12) {
             clear_and_drawProgress.call(button2);
-            button2.setText('change map', 990, 419, 22, 'lime');
+            button2.setText('change your map', 990, 419, 22, 'lime');
             map_Generator(arr_Enemy_Map, box1);
             clear_and_drawProgress.call(infoBox);
             infoBox.setText('Ready!', 1005, 150, 35, 'orange');
-            infoBox.setText('Press "Fight"', 940, 190, 20, 'orange');
-            infoBox.setText('or press ENTER', 965, 210, 20, 'orange');
+            infoBox.setText('Press "Fight!"', 1000, 190, 20, 'orange');
+            infoBox.setText('or press ENTER.', 985, 210, 20, 'orange');
             clear_and_drawProgress.call(button);
-            button.setText('Развалить врага!', 953, 342, 30, 'yellow');
+            button.setText('Fight!', 1030, 342, 30, 'yellow');
 
             setTimeout(function() {
                 for (var i = 0; i < arr_Self_Map.length; i++) {
@@ -423,21 +423,21 @@
 
         } else if (phase == 13) {
             clear_and_drawProgress.call(button2);
-            button2.setText('Поставить метку', 985, 419, 22, 'pink');
+            button2.setText('Set label', 1025, 419, 22, 'pink');
             clear_and_drawProgress.call(infoBox);
             infoBox.setText('FIGHT!', 1008, 100, 35, 'yellow');
-            infoBox.setText('Стреляйте по полю врага', 940, 140, 20, 'orange');
-            infoBox.setText('выбирая мышкой нужные', 940, 160, 20, 'orange');
-            infoBox.setText('клетки. Не забывйте', 940, 180, 20, 'orange');
-            infoBox.setText('ставить метки.', 940, 200, 20, 'orange');
-            infoBox.setText('Их можно ставить', 940, 220, 20, 'orange');
-            infoBox.setText('специальной кнопкой внизу', 940, 240, 20, 'orange');
-            infoBox.setText('или правой кнопкой мыши.', 940, 260, 20, 'orange');
+            infoBox.setText("Shoot the enemy's ships", 960, 140, 20, 'orange');
+            infoBox.setText('by clicking sought-for cells', 950, 160, 20, 'orange');
+            infoBox.setText("on the enemy's field.", 980, 180, 20, 'orange');
+            infoBox.setText('Do not forget to use labels.', 950, 200, 20, 'orange');
+            infoBox.setText('You can set them with the right', 935, 220, 20, 'orange');
+            infoBox.setText('mouse button click, or with the', 935, 240, 20, 'orange');
+            infoBox.setText('special button below.', 980, 260, 20, 'orange');
             clear_and_drawProgress.call(button);
-            button.setText('Играть заново', 985, 342, 25, 'green');
+            button.setText('New game!', 1005, 342, 25, 'green');
         } else if (phase == 14) {
             clear_and_drawProgress.call(button);
-            button.setText('Play again!', 972, 342, 30, 'yellow');
+            button.setText('New game!', 1005, 342, 30, 'yellow');
             //-----------------дорисовка кораблей, в которые не попали----------
             (function drawLast() {
                 for (var i = 0; i < arr_Self_Map.length; i++) {

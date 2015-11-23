@@ -69,7 +69,7 @@ function setShip(index, arr_Map, box, ship_type) {
                 arrPosition.pop();
             }
             delta_func();
-             button.setText('Подтвердить', 1000, 342, 25, 'white');
+             button.setText('Confirm', 1030, 342, 25, 'white');
         }
         if(arrPosition.compare_some(index) == false && arr_Map[index] == 1){
             arr_Map[index] = 0;
@@ -151,7 +151,7 @@ function setShip(index, arr_Map, box, ship_type) {
         };
         if (arrPosition.length == ship_type){
             clear_and_drawProgress.call(button);
-            button.setText('Подтвердить', 980, 342, 30, 'lime');
+            button.setText('Confirm', 1015, 342, 30, 'lime');
         };
 }
     //--------------------------------------------------------------------
