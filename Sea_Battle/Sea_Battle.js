@@ -148,25 +148,25 @@
                 };
                 if (x_index == 0) {
                     if (y_index == 1) {
-                        fill('А')
+                        fill('A')
                     } else if (y_index == 2) {
-                        fill('Б')
+                        fill('B')
                     } else if (y_index == 3) {
-                        fill('В')
+                        fill('C')
                     } else if (y_index == 4) {
-                        fill('Г')
+                        fill('D')
                     } else if (y_index == 5) {
-                        fill('Д')
+                        fill('E')
                     } else if (y_index == 6) {
-                        fill('Е')
+                        fill('F')
                     } else if (y_index == 7) {
-                        fill('Ж')
+                        fill('G')
                     } else if (y_index == 8) {
-                        fill('З')
+                        fill('H')
                     } else if (y_index == 9) {
-                        fill('И')
+                        fill('I')
                     } else if (y_index == 10) {
-                        fill('К')
+                        fill('J')
                     };
                 }
                 layer_1.ctx.closePath();
