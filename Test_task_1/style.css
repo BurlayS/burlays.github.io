@@ -61,11 +61,10 @@ background: #FFEC8B;
 #close{
 text-align: right;
 }
-#close-img{
-  barder: 2px solid #000;
-  -ms-transform: scaleX(2, 3);
-  -webkit-transform: scaleX(2, 3);
-  transform: scale(2, 3);
+#close-img:hover{
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
 }
 #name{
 position: relative;
