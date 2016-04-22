@@ -65,9 +65,9 @@ text-align: right;
   -ms-transform: rotate(25deg);
   -webkit-transform: rotate(25deg);
   transform: rotate(25deg);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
+  -ms-transform: scale(2,3);
+  -webkit-transform: scale(2,3);
+  transform: scale(2,3);
 }
 #name{
 position: relative;
