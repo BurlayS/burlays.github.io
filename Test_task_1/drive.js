@@ -20,7 +20,7 @@ $(document).ready(function() {
 
         function PopUp(i) {
             $('<div id="window-popup"><div id="window-content"></div></div>').appendTo('body');
-            $('<div id = "close"><div id="close-img"><img src="close-button.gif"></div></div>').appendTo('#window-content');
+            $('<div id = "close"><img id="close-img" src="close-button.gif"></div>').appendTo('#window-content');
 
             $('<div id = "name">' + data[i].name + '</div>').appendTo('#window-content')
             $('<div class = "text"><img id = "pic" src=' + data[i].img + '></div>').appendTo('#window-content');
