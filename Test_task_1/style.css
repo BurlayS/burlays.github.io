@@ -62,9 +62,9 @@ background: #FFEC8B;
 text-align: right;
 }
 #close-img : hover{
-  -ms-transform: rotate(7deg);
-  -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);;
+  -ms-transform: scaleX(2, 3);
+  -webkit-transform: scaleX(2, 3);
+  transform: scale(2, 3);
 }
 #name{
 position: relative;
