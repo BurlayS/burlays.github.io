@@ -62,9 +62,9 @@ background: #FFEC8B;
 text-align: right;
 }
 #close-img:hover{
-  -ms-transform: rotate(25deg);
-  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
+  /*-ms-transform: rotate(25deg);*/
+  /*-webkit-transform: rotate(25deg);*/
+  /*transform: rotate(25deg);*/
   -ms-transform: scale(2,3);
   -webkit-transform: scale(2,3);
   transform: scale(2,3);
