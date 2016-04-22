@@ -61,7 +61,8 @@ background: #FFEC8B;
 #close{
 text-align: right;
 }
-#close-img : hover{
+#close-img{
+  barder: 2px solid #000;
   -ms-transform: scaleX(2, 3);
   -webkit-transform: scaleX(2, 3);
   transform: scale(2, 3);
