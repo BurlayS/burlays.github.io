@@ -62,9 +62,9 @@ background: #FFEC8B;
 text-align: right;
 }
 #close-img:hover{
-  -ms-transform: rotate(7deg);
-  -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);
+  -ms-transform: rotate(17deg);
+  -webkit-transform: rotate(17deg);
+  transform: rotate(17deg);
 }
 #name{
 position: relative;
