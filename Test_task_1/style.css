@@ -57,7 +57,7 @@ background: #FFEC8B;
 .tdClicked:hover{
   background-color: lime;
   font-weight: 900;
-  font-size: small;
+  font-size: x-large;
 }
 #close{
 text-align: right;
