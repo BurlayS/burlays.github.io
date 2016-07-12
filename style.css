@@ -12,13 +12,15 @@ src: url('Menuet script.ttf');
 	padding: 0;
 }
 html{
-	background-color: #BC8F8F; 
+	/*background-color: #BC8F8F; */
+	background-color: #8B2323;
 	width: 100%;
 	height: auto;	
 	}
 body{
 	border-radius: 10px;
-	background-color: #BC8F8F; 
+	/*background-color: #BC8F8F; */
+	background-color: #8B2323;
 	width: 98%;
 	margin-left: 1%;
 	height: 1100px;
@@ -32,7 +34,9 @@ body{
 	padding-right: 0; 	
 	}
 #header{
-	background-color: #BC8F8F;
+	/*background-color: #BC8F8F;*/
+	background-color: #8B2323;
+	width: 98%;
 	display: table;
 	color: #FFFEAA;
 	font-size: 250%;
@@ -52,12 +56,19 @@ table, th, td {
 hr{
 	height: 2px;
 	border: none;
-	background-color: #BC8F8F;
+	/*background-color: #BC8F8F;*/
+	background-color: #8B2323;
 	}
 #navbarHorizont, #header, #divCenter, hr, footer, ul.nav{
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+}
+#list-of-works {
+	color: #8B2323;
+}
+#list-of-works li a{
+	color: #000;
 }
 #navbarHorizont, ul.nav{
 	display: table;
@@ -75,7 +86,7 @@ ul.nav li {
 	margin-right:2.5%;
 	height: 100%;
   	background-color: #FFFEAA;
-  	border: 1px solid #8B658B;
+  	border: 1px solid #8B2323;
   	float:left;                                   /*делаем меню горизонтальным*/
   	list-style: none; 
   	text-align: center;
@@ -91,7 +102,7 @@ ul.nav:first-child{
 }
 ul.nav li a {
 	line-height: 240%;
-	color: #8B658B;
+	color: #8B2323;;
 	font-size: 150%;
 	text-decoration: none;
 	font-weight: 900;
